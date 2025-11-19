@@ -63,8 +63,11 @@ The model can memorize local patterns (100% single-step) but cannot generate coh
 
 ### Figures Tell the Story
 
-- **Figure 1** (accuracy_comparison.png): The headline result - massive degradation
-- **Figures 2-6**: Different perspectives on the same failure
+- **Figure 1** (accuracy_comparison.png): THE KEY FIGURE - Shows complete story: 100% → 44% → 18%
+  - Perfect single-step (memorization works)
+  - 56pp drop to sequential (no rule learning)
+  - 26pp drop on novel seeds (no generalization)
+- **Figures 2-6**: Different perspectives on sequential evaluation failure
 - **Figure 7** (probing_results.png): The mechanistic explanation for WHY
 
 ### Additional Context Available

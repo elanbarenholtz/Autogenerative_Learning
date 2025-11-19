@@ -23,14 +23,16 @@
 ## Figure Descriptions
 
 ### Figure 1: Accuracy Comparison (accuracy_comparison.png)
-**Evaluation Method**: Sequential/Autoregressive (Method 2)
+**Evaluation Methods**: Single-Step (Method 1) + Sequential/Autoregressive (Method 2)
 
 **What it shows**:
-- Training Seeds: 44.0% exact match accuracy
-- Novel Seeds: 18.0% exact match accuracy
-- 26 percentage point degradation
+- **Single-Step Training**: 100.0% exact match accuracy
+- **Sequential Training Seeds**: 44.0% exact match accuracy
+- **Sequential Novel Seeds**: 18.0% exact match accuracy
+- **56 percentage point drop** from single-step to sequential (on training data)
+- **26 percentage point drop** from training to novel seeds (sequential)
 
-**Key Takeaway**: Model fails to generalize to novel seeds even when using the same Fibonacci rule. This is the PRIMARY evidence that the model didn't learn the underlying recurrence relation.
+**Key Takeaway**: This is THE KEY FIGURE showing the complete story. The model achieves perfect single-step accuracy (memorization works) but fails dramatically at sequential generation (56pp drop), proving it didn't learn the underlying rule. The additional 26pp drop on novel seeds shows the memorization doesn't generalize. This is the PRIMARY evidence that the model didn't learn the F(n) = F(n-1) + F(n-2) rule.
 
 **File**: `visualizations/accuracy_comparison.png`
 
