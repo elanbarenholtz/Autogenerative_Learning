@@ -1,0 +1,410 @@
+{
+  "novel_seeds": {
+    "individual_results": [
+      {
+        "seed": [
+          17,
+          29
+        ],
+        "sequence_length": 30,
+        "total_predictions": 20,
+        "exact_matches": 4,
+        "exact_match_accuracy": 20.0,
+        "mean_absolute_error": 2651940.15,
+        "median_absolute_error": 207014.5,
+        "max_error": 20306223,
+        "mean_relative_error": 73.13987566896841
+      },
+      {
+        "seed": [
+          23,
+          37
+        ],
+        "sequence_length": 30,
+        "total_predictions": 20,
+        "exact_matches": 3,
+        "exact_match_accuracy": 15.0,
+        "mean_absolute_error": 3442162.55,
+        "median_absolute_error": 280243.5,
+        "max_error": 26326921,
+        "mean_relative_error": 80.6079769511617
+      },
+      {
+        "seed": [
+          13,
+          21
+        ],
+        "sequence_length": 30,
+        "total_predictions": 20,
+        "exact_matches": 4,
+        "exact_match_accuracy": 20.0,
+        "mean_absolute_error": 1949207.2,
+        "median_absolute_error": 157120.0,
+        "max_error": 14921147,
+        "mean_relative_error": 76.10509159856933
+      },
+      {
+        "seed": [
+          31,
+          50
+        ],
+        "sequence_length": 30,
+        "total_predictions": 20,
+        "exact_matches": 3,
+        "exact_match_accuracy": 15.0,
+        "mean_absolute_error": 4647876.25,
+        "median_absolute_error": 369302.5,
+        "max_error": 35554386,
+        "mean_relative_error": 81.97367258952583
+      },
+      {
+        "seed": [
+          19,
+          31
+        ],
+        "sequence_length": 30,
+        "total_predictions": 20,
+        "exact_matches": 4,
+        "exact_match_accuracy": 20.0,
+        "mean_absolute_error": 2870156.95,
+        "median_absolute_error": 227426.0,
+        "max_error": 21970303,
+        "mean_relative_error": 76.97496675017457
+      }
+    ],
+    "average_accuracy": 18.0,
+    "average_mae": 3112268.6199999996
+  },
+  "training_seeds": {
+    "individual_results": [
+      {
+        "seed": [
+          0,
+          1
+        ],
+        "sequence_length": 30,
+        "total_predictions": 20,
+        "exact_matches": 11,
+        "exact_match_accuracy": 55.0,
+        "mean_absolute_error": 64876.45,
+        "median_absolute_error": 0.0,
+        "max_error": 505024,
+        "mean_relative_error": 41.18993721016387
+      },
+      {
+        "seed": [
+          1,
+          1
+        ],
+        "sequence_length": 30,
+        "total_predictions": 20,
+        "exact_matches": 10,
+        "exact_match_accuracy": 50.0,
+        "mean_absolute_error": 106475.7,
+        "median_absolute_error": 5168.0,
+        "max_error": 831985,
+        "mean_relative_error": 46.189606697207765
+      },
+      {
+        "seed": [
+          2,
+          3
+        ],
+        "sequence_length": 30,
+        "total_predictions": 20,
+        "exact_matches": 8,
+        "exact_match_accuracy": 40.0,
+        "mean_absolute_error": 281784.1,
+        "median_absolute_error": 18016.0,
+        "max_error": 2169104,
+        "mean_relative_error": 56.13429084700827
+      },
+      {
+        "seed": [
+          1,
+          2
+        ],
+        "sequence_length": 30,
+        "total_predictions": 20,
+        "exact_matches": 9,
+        "exact_match_accuracy": 45.0,
+        "mean_absolute_error": 173328.9,
+        "median_absolute_error": 10641.0,
+        "max_error": 1337064,
+        "mean_relative_error": 51.15541962166789
+      },
+      {
+        "seed": [
+          5,
+          8
+        ],
+        "sequence_length": 30,
+        "total_predictions": 20,
+        "exact_matches": 6,
+        "exact_match_accuracy": 30.0,
+        "mean_absolute_error": 742236.85,
+        "median_absolute_error": 57070.5,
+        "max_error": 5693682,
+        "mean_relative_error": 66.11316207234867
+      }
+    ],
+    "average_accuracy": 44.0,
+    "average_mae": 273740.4
+  },
+  "extended_sequences": [
+    {
+      "seed": [
+        0,
+        1
+      ],
+      "sequence_length": 50,
+      "total_predictions": 40,
+      "exact_matches": 11,
+      "exact_match_accuracy": 27.5,
+      "mean_absolute_error": 509119684.6,
+      "median_absolute_error": 668504.5,
+      "max_error": 7778732844,
+      "mean_relative_error": 70.55005667249881
+    },
+    {
+      "seed": [
+        1,
+        1
+      ],
+      "sequence_length": 50,
+      "total_predictions": 40,
+      "exact_matches": 10,
+      "exact_match_accuracy": 25.0,
+      "mean_absolute_error": 823776180.1,
+      "median_absolute_error": 1084524.5,
+      "max_error": 12586259820,
+      "mean_relative_error": 73.05005484411743
+    },
+    {
+      "seed": [
+        2,
+        3
+      ],
+      "sequence_length": 50,
+      "total_predictions": 40,
+      "exact_matches": 8,
+      "exact_match_accuracy": 20.0,
+      "mean_absolute_error": 2156682999.175,
+      "median_absolute_error": 2842238.5,
+      "max_error": 32951270894,
+      "mean_relative_error": 78.05005301573604
+    }
+  ],
+  "autoregressive_generation": [
+    {
+      "seed": [
+        0,
+        1
+      ],
+      "initial_context": [
+        0,
+        1,
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        34
+      ],
+      "generated_sequence": [
+        0,
+        1,
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        34,
+        55,
+        89,
+        144,
+        233,
+        377,
+        610,
+        987,
+        1597,
+        2584,
+        4181,
+        6765,
+        610,
+        987,
+        1597,
+        2584,
+        4181,
+        6765,
+        610,
+        987,
+        1597
+      ],
+      "true_sequence": [
+        0,
+        1,
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        34,
+        55,
+        89,
+        144,
+        233,
+        377,
+        610,
+        987,
+        1597,
+        2584,
+        4181,
+        6765,
+        10946,
+        17711,
+        28657,
+        46368,
+        75025,
+        121393,
+        196418,
+        317811,
+        514229
+      ],
+      "errors": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10336,
+        16724,
+        27060,
+        43784,
+        70844,
+        114628,
+        195808,
+        316824,
+        512632
+      ],
+      "mean_error": 65432.0
+    },
+    {
+      "seed": [
+        17,
+        29
+      ],
+      "initial_context": [
+        17,
+        29,
+        46,
+        75,
+        121,
+        196,
+        317,
+        513,
+        830,
+        1343
+      ],
+      "generated_sequence": [
+        17,
+        29,
+        46,
+        75,
+        121,
+        196,
+        317,
+        513,
+        830,
+        1343,
+        2173,
+        3516,
+        5689,
+        9205,
+        9205,
+        9205,
+        9205,
+        6765,
+        8362,
+        2063,
+        3338,
+        5401,
+        8739,
+        4181,
+        6765,
+        9959,
+        2817,
+        4558,
+        7375,
+        2584
+      ],
+      "true_sequence": [
+        17,
+        29,
+        46,
+        75,
+        121,
+        196,
+        317,
+        513,
+        830,
+        1343,
+        2173,
+        3516,
+        5689,
+        9205,
+        14894,
+        24099,
+        38993,
+        63092,
+        102085,
+        165177,
+        267262,
+        432439,
+        699701,
+        1132140,
+        1831841,
+        2963981,
+        4795822,
+        7759803,
+        12555625,
+        20315428
+      ],
+      "errors": [
+        0,
+        0,
+        0,
+        0,
+        5689,
+        14894,
+        29788,
+        56327,
+        93723,
+        163114,
+        263924,
+        427038,
+        690962,
+        1127959,
+        1825076,
+        2954022,
+        4793005,
+        7755245,
+        12548250,
+        20312844
+      ],
+      "mean_error": 2653093.0
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "relation_name": "Fibonacci: F(n) = F(n-1) + F(n-2)",
+    "test_accuracy": 100.0,
+    "test_mae": 0.0,
+    "train_accuracy": 100.0,
+    "train_mae": 0.0,
+    "degradation": 0.0
+  },
+  {
+    "relation_name": "Linear: F(n) = 2*F(n-1) + F(n-2)",
+    "test_accuracy": 0.0,
+    "test_mae": 13649.0,
+    "train_accuracy": 100.0,
+    "train_mae": 0.0,
+    "degradation": 100.0
+  },
+  {
+    "relation_name": "Tribonacci: F(n) = F(n-1) + F(n-2) + F(n-3)",
+    "test_accuracy": 0.0,
+    "test_mae": 23302.03846153846,
+    "train_accuracy": 100.0,
+    "train_mae": 0.0,
+    "degradation": 100.0
+  },
+  {
+    "relation_name": "Geometric: F(n) = 2 * F(n-1)",
+    "test_accuracy": 40.0,
+    "test_mae": 23552.0,
+    "train_accuracy": 100.0,
+    "train_mae": 0.0,
+    "degradation": 60.0
+  },
+  {
+    "relation_name": "Fibonacci+1: F(n) = F(n-1) + F(n-2) + 1",
+    "test_accuracy": 37.5,
+    "test_mae": 33046.2,
+    "train_accuracy": 100.0,
+    "train_mae": 0.0,
+    "degradation": 62.5
+  }
+]

@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Generated data (can be recreated)
+data/*.json
+!data/.gitkeep
+
+# Trained models (large files, can be retrained)
+models/*.pt
+!models/.gitkeep
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints
+
+# Logs
+*.log
+
+# Results can be kept (they're small)
+# results/
+# experiments/
+# visualizations/
