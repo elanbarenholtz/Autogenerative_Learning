@@ -1,0 +1,20 @@
+{
+  "type": "digit",
+  "vocab_size": 12,
+  "vocab": [
+    "[PAD]",
+    "[SEP]",
+    "[DIGIT_0]",
+    "[DIGIT_1]",
+    "[DIGIT_2]",
+    "[DIGIT_3]",
+    "[DIGIT_4]",
+    "[DIGIT_5]",
+    "[DIGIT_6]",
+    "[DIGIT_7]",
+    "[DIGIT_8]",
+    "[DIGIT_9]"
+  ],
+  "pad_token": "[PAD]",
+  "sep_token": "[SEP]"
+}
