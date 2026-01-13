@@ -1,0 +1,34 @@
+{
+  "layers": [
+    0,
+    1,
+    2
+  ],
+  "f_n1_accuracy": [
+    0.625,
+    0.625,
+    0.625
+  ],
+  "f_n2_accuracy": [
+    0.5833333333333334,
+    0.5833333333333334,
+    0.5833333333333334
+  ],
+  "interpretation": {
+    "0": {
+      "uses_addition": false,
+      "uses_ratio": false,
+      "uncertain": true
+    },
+    "1": {
+      "uses_addition": false,
+      "uses_ratio": false,
+      "uncertain": true
+    },
+    "2": {
+      "uses_addition": false,
+      "uses_ratio": false,
+      "uncertain": true
+    }
+  }
+}

@@ -190,7 +190,7 @@ def train_digit_model(relation_name: str, epochs: int = 50):
         num_layers=3,
         dim_feedforward=512,
         dropout=0.1,
-        max_seq_len=100  # Longer sequences due to digit encoding
+        max_seq_len=200  # Longer sequences due to digit encoding
     ).to(device)
 
     num_params = sum(p.numel() for p in model.parameters())
@@ -272,10 +272,18 @@ def train_digit_model(relation_name: str, epochs: int = 50):
 
 def main():
     """Train digit-wise models for all relations."""
-    relations = ['fibonacci']  # Start with just Fibonacci for testing
+    import argparse
 
-    for relation_name in relations:
-        train_digit_model(relation_name, epochs=100)
+    parser = argparse.ArgumentParser(description='Train digit-wise model')
+    parser.add_argument('--relation', type=str, default='fibonacci',
+                        choices=['fibonacci', 'linear', 'tribonacci', 'geometric', 'fibonacci_plus_constant'],
+                        help='Relation to train on')
+    parser.add_argument('--epochs', type=int, default=100,
+                        help='Number of training epochs')
+
+    args = parser.parse_args()
+
+    train_digit_model(args.relation, epochs=args.epochs)
 
 
 if __name__ == "__main__":

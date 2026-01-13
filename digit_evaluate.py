@@ -232,7 +232,7 @@ def evaluate_digit_model(relation_name: str, test_type: str = 'both'):
         num_layers=3,
         dim_feedforward=512,
         dropout=0.0,
-        max_seq_len=100
+        max_seq_len=200  # Increased for longer digit sequences
     ).to(device)
 
     model.load_state_dict(checkpoint['model_state_dict'])
@@ -316,8 +316,20 @@ def evaluate_digit_model(relation_name: str, test_type: str = 'both'):
 
 
 def main():
-    """Evaluate digit-wise Fibonacci model."""
-    evaluate_digit_model('fibonacci', test_type='both')
+    """Evaluate digit-wise model."""
+    import argparse
+
+    parser = argparse.ArgumentParser(description='Evaluate digit-wise model')
+    parser.add_argument('--relation', type=str, default='fibonacci',
+                        choices=['fibonacci', 'linear', 'tribonacci', 'geometric', 'fibonacci_plus_constant'],
+                        help='Relation to evaluate')
+    parser.add_argument('--test-type', type=str, default='both',
+                        choices=['individual', 'sequential', 'both'],
+                        help='Type of evaluation to run')
+
+    args = parser.parse_args()
+
+    evaluate_digit_model(args.relation, test_type=args.test_type)
 
 
 if __name__ == "__main__":
