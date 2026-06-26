@@ -1,0 +1,761 @@
+[
+  {
+    "run_id": "REL=fibonacci__REP=integer__EXP=seed_distance__CFG=band0_core_n20__RS=42",
+    "relation": "fibonacci",
+    "band": "band0_core",
+    "n_train": 20,
+    "random_seed": 42,
+    "mean_accuracy": 1.5734989648033124,
+    "std_accuracy": 10.255952247076102,
+    "partition_accuracy": {
+      "near": 3.89937106918239,
+      "mid": 0.0,
+      "far": 0.8484848484848484
+    },
+    "n_train_examples": 229,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci__REP=integer__EXP=seed_distance__CFG=band0_core_n20__RS=123",
+    "relation": "fibonacci",
+    "band": "band0_core",
+    "n_train": 20,
+    "random_seed": 123,
+    "mean_accuracy": 1.5734989648033124,
+    "std_accuracy": 10.255952247076102,
+    "partition_accuracy": {
+      "near": 3.89937106918239,
+      "mid": 0.0,
+      "far": 0.8484848484848484
+    },
+    "n_train_examples": 229,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci__REP=integer__EXP=seed_distance__CFG=band0_core_n20__RS=7",
+    "relation": "fibonacci",
+    "band": "band0_core",
+    "n_train": 20,
+    "random_seed": 7,
+    "mean_accuracy": 1.5734989648033124,
+    "std_accuracy": 10.255952247076102,
+    "partition_accuracy": {
+      "near": 3.89937106918239,
+      "mid": 0.0,
+      "far": 0.8484848484848484
+    },
+    "n_train_examples": 229,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci__REP=integer__EXP=seed_distance__CFG=band1_near_n20__RS=42",
+    "relation": "fibonacci",
+    "band": "band1_near",
+    "n_train": 20,
+    "random_seed": 42,
+    "mean_accuracy": 1.6977225672877845,
+    "std_accuracy": 10.82592046061264,
+    "partition_accuracy": {
+      "near": 4.150943396226415,
+      "mid": 1.0062893081761006,
+      "far": 0.0
+    },
+    "n_train_examples": 205,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci__REP=integer__EXP=seed_distance__CFG=band1_near_n20__RS=123",
+    "relation": "fibonacci",
+    "band": "band1_near",
+    "n_train": 20,
+    "random_seed": 123,
+    "mean_accuracy": 1.6977225672877845,
+    "std_accuracy": 10.82592046061264,
+    "partition_accuracy": {
+      "near": 4.150943396226415,
+      "mid": 1.0062893081761006,
+      "far": 0.0
+    },
+    "n_train_examples": 205,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci__REP=integer__EXP=seed_distance__CFG=band1_near_n20__RS=7",
+    "relation": "fibonacci",
+    "band": "band1_near",
+    "n_train": 20,
+    "random_seed": 7,
+    "mean_accuracy": 1.6977225672877845,
+    "std_accuracy": 10.82592046061264,
+    "partition_accuracy": {
+      "near": 4.150943396226415,
+      "mid": 1.0062893081761006,
+      "far": 0.0
+    },
+    "n_train_examples": 205,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci__REP=integer__EXP=seed_distance__CFG=band2_mid_n20__RS=42",
+    "relation": "fibonacci",
+    "band": "band2_mid",
+    "n_train": 20,
+    "random_seed": 42,
+    "mean_accuracy": 0.6625258799171843,
+    "std_accuracy": 5.907264430683895,
+    "partition_accuracy": {
+      "near": 0.0,
+      "mid": 0.0,
+      "far": 1.9393939393939394
+    },
+    "n_train_examples": 195,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci__REP=integer__EXP=seed_distance__CFG=band2_mid_n20__RS=123",
+    "relation": "fibonacci",
+    "band": "band2_mid",
+    "n_train": 20,
+    "random_seed": 123,
+    "mean_accuracy": 0.6625258799171843,
+    "std_accuracy": 5.907264430683895,
+    "partition_accuracy": {
+      "near": 0.0,
+      "mid": 0.0,
+      "far": 1.9393939393939394
+    },
+    "n_train_examples": 195,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci__REP=integer__EXP=seed_distance__CFG=band2_mid_n20__RS=7",
+    "relation": "fibonacci",
+    "band": "band2_mid",
+    "n_train": 20,
+    "random_seed": 7,
+    "mean_accuracy": 0.6625258799171843,
+    "std_accuracy": 5.907264430683895,
+    "partition_accuracy": {
+      "near": 0.0,
+      "mid": 0.0,
+      "far": 1.9393939393939394
+    },
+    "n_train_examples": 195,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci__REP=integer__EXP=seed_distance__CFG=band3_far_n20__RS=42",
+    "relation": "fibonacci",
+    "band": "band3_far",
+    "n_train": 20,
+    "random_seed": 42,
+    "mean_accuracy": 0.0,
+    "std_accuracy": 0.0,
+    "partition_accuracy": {
+      "near": 0.0,
+      "mid": 0.0,
+      "far": 0.0
+    },
+    "n_train_examples": 161,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci__REP=integer__EXP=seed_distance__CFG=band3_far_n20__RS=123",
+    "relation": "fibonacci",
+    "band": "band3_far",
+    "n_train": 20,
+    "random_seed": 123,
+    "mean_accuracy": 0.0,
+    "std_accuracy": 0.0,
+    "partition_accuracy": {
+      "near": 0.0,
+      "mid": 0.0,
+      "far": 0.0
+    },
+    "n_train_examples": 161,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci__REP=integer__EXP=seed_distance__CFG=band3_far_n20__RS=7",
+    "relation": "fibonacci",
+    "band": "band3_far",
+    "n_train": 20,
+    "random_seed": 7,
+    "mean_accuracy": 0.0,
+    "std_accuracy": 0.0,
+    "partition_accuracy": {
+      "near": 0.0,
+      "mid": 0.0,
+      "far": 0.0
+    },
+    "n_train_examples": 161,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=modular_arithmetic__REP=integer__EXP=seed_distance__CFG=band0_core_n20__RS=42",
+    "relation": "modular_arithmetic",
+    "band": "band0_core",
+    "n_train": 20,
+    "random_seed": 42,
+    "mean_accuracy": 24.22360248447205,
+    "std_accuracy": 33.38455229311328,
+    "partition_accuracy": {
+      "near": 23.773584905660375,
+      "mid": 31.44654088050315,
+      "far": 17.6969696969697
+    },
+    "n_train_examples": 300,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=modular_arithmetic__REP=integer__EXP=seed_distance__CFG=band0_core_n20__RS=123",
+    "relation": "modular_arithmetic",
+    "band": "band0_core",
+    "n_train": 20,
+    "random_seed": 123,
+    "mean_accuracy": 24.22360248447205,
+    "std_accuracy": 33.868901973750845,
+    "partition_accuracy": {
+      "near": 23.270440251572325,
+      "mid": 31.949685534591197,
+      "far": 17.6969696969697
+    },
+    "n_train_examples": 300,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=modular_arithmetic__REP=integer__EXP=seed_distance__CFG=band0_core_n20__RS=7",
+    "relation": "modular_arithmetic",
+    "band": "band0_core",
+    "n_train": 20,
+    "random_seed": 7,
+    "mean_accuracy": 24.22360248447205,
+    "std_accuracy": 33.868901973750845,
+    "partition_accuracy": {
+      "near": 23.39622641509434,
+      "mid": 31.57232704402516,
+      "far": 17.93939393939394
+    },
+    "n_train_examples": 300,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=modular_arithmetic__REP=integer__EXP=seed_distance__CFG=band1_near_n20__RS=42",
+    "relation": "modular_arithmetic",
+    "band": "band1_near",
+    "n_train": 20,
+    "random_seed": 42,
+    "mean_accuracy": 30.103519668737057,
+    "std_accuracy": 37.03359107917091,
+    "partition_accuracy": {
+      "near": 28.67924528301887,
+      "mid": 33.45911949685535,
+      "far": 28.242424242424242
+    },
+    "n_train_examples": 300,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=modular_arithmetic__REP=integer__EXP=seed_distance__CFG=band1_near_n20__RS=123",
+    "relation": "modular_arithmetic",
+    "band": "band1_near",
+    "n_train": 20,
+    "random_seed": 123,
+    "mean_accuracy": 30.31055900621118,
+    "std_accuracy": 36.935400010635064,
+    "partition_accuracy": {
+      "near": 28.67924528301887,
+      "mid": 33.9622641509434,
+      "far": 28.363636363636363
+    },
+    "n_train_examples": 300,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=modular_arithmetic__REP=integer__EXP=seed_distance__CFG=band1_near_n20__RS=7",
+    "relation": "modular_arithmetic",
+    "band": "band1_near",
+    "n_train": 20,
+    "random_seed": 7,
+    "mean_accuracy": 30.103519668737057,
+    "std_accuracy": 37.03359107917091,
+    "partition_accuracy": {
+      "near": 28.67924528301887,
+      "mid": 33.45911949685535,
+      "far": 28.242424242424242
+    },
+    "n_train_examples": 300,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=modular_arithmetic__REP=integer__EXP=seed_distance__CFG=band2_mid_n20__RS=42",
+    "relation": "modular_arithmetic",
+    "band": "band2_mid",
+    "n_train": 20,
+    "random_seed": 42,
+    "mean_accuracy": 25.714285714285715,
+    "std_accuracy": 33.50973730620797,
+    "partition_accuracy": {
+      "near": 22.38993710691824,
+      "mid": 26.289308176100633,
+      "far": 28.363636363636367
+    },
+    "n_train_examples": 300,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=modular_arithmetic__REP=integer__EXP=seed_distance__CFG=band2_mid_n20__RS=123",
+    "relation": "modular_arithmetic",
+    "band": "band2_mid",
+    "n_train": 20,
+    "random_seed": 123,
+    "mean_accuracy": 25.838509316770185,
+    "std_accuracy": 33.426435313447065,
+    "partition_accuracy": {
+      "near": 22.38993710691824,
+      "mid": 26.289308176100633,
+      "far": 28.72727272727273
+    },
+    "n_train_examples": 300,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=modular_arithmetic__REP=integer__EXP=seed_distance__CFG=band2_mid_n20__RS=7",
+    "relation": "modular_arithmetic",
+    "band": "band2_mid",
+    "n_train": 20,
+    "random_seed": 7,
+    "mean_accuracy": 25.672877846790893,
+    "std_accuracy": 33.537356406562104,
+    "partition_accuracy": {
+      "near": 22.26415094339623,
+      "mid": 26.163522012578618,
+      "far": 28.48484848484849
+    },
+    "n_train_examples": 300,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": null,
+    "relation": "modular_arithmetic",
+    "band": "band3_far",
+    "n_train": 20,
+    "random_seed": 42,
+    "mean_accuracy": null,
+    "std_accuracy": null,
+    "partition_accuracy": {},
+    "n_train_examples": 0,
+    "n_train_seeds": 0,
+    "skipped": true
+  },
+  {
+    "run_id": null,
+    "relation": "modular_arithmetic",
+    "band": "band3_far",
+    "n_train": 20,
+    "random_seed": 123,
+    "mean_accuracy": null,
+    "std_accuracy": null,
+    "partition_accuracy": {},
+    "n_train_examples": 0,
+    "n_train_seeds": 0,
+    "skipped": true
+  },
+  {
+    "run_id": null,
+    "relation": "modular_arithmetic",
+    "band": "band3_far",
+    "n_train": 20,
+    "random_seed": 7,
+    "mean_accuracy": null,
+    "std_accuracy": null,
+    "partition_accuracy": {},
+    "n_train_examples": 0,
+    "n_train_seeds": 0,
+    "skipped": true
+  },
+  {
+    "run_id": "REL=fibonacci_plus_constant__REP=integer__EXP=seed_distance__CFG=band0_core_n20__RS=42",
+    "relation": "fibonacci_plus_constant",
+    "band": "band0_core",
+    "n_train": 20,
+    "random_seed": 42,
+    "mean_accuracy": 1.5320910973084885,
+    "std_accuracy": 9.780149109665876,
+    "partition_accuracy": {
+      "near": 3.7735849056603774,
+      "mid": 0.0,
+      "far": 0.8484848484848484
+    },
+    "n_train_examples": 222,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci_plus_constant__REP=integer__EXP=seed_distance__CFG=band0_core_n20__RS=123",
+    "relation": "fibonacci_plus_constant",
+    "band": "band0_core",
+    "n_train": 20,
+    "random_seed": 123,
+    "mean_accuracy": 1.5320910973084885,
+    "std_accuracy": 9.780149109665876,
+    "partition_accuracy": {
+      "near": 3.7735849056603774,
+      "mid": 0.0,
+      "far": 0.8484848484848484
+    },
+    "n_train_examples": 222,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci_plus_constant__REP=integer__EXP=seed_distance__CFG=band0_core_n20__RS=7",
+    "relation": "fibonacci_plus_constant",
+    "band": "band0_core",
+    "n_train": 20,
+    "random_seed": 7,
+    "mean_accuracy": 1.5320910973084885,
+    "std_accuracy": 9.780149109665876,
+    "partition_accuracy": {
+      "near": 3.7735849056603774,
+      "mid": 0.0,
+      "far": 0.8484848484848484
+    },
+    "n_train_examples": 222,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci_plus_constant__REP=integer__EXP=seed_distance__CFG=band1_near_n20__RS=42",
+    "relation": "fibonacci_plus_constant",
+    "band": "band1_near",
+    "n_train": 20,
+    "random_seed": 42,
+    "mean_accuracy": 2.153209109730849,
+    "std_accuracy": 11.036109487222756,
+    "partition_accuracy": {
+      "near": 4.654088050314466,
+      "mid": 1.0062893081761006,
+      "far": 0.8484848484848484
+    },
+    "n_train_examples": 203,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci_plus_constant__REP=integer__EXP=seed_distance__CFG=band1_near_n20__RS=123",
+    "relation": "fibonacci_plus_constant",
+    "band": "band1_near",
+    "n_train": 20,
+    "random_seed": 123,
+    "mean_accuracy": 2.153209109730849,
+    "std_accuracy": 11.036109487222756,
+    "partition_accuracy": {
+      "near": 4.654088050314466,
+      "mid": 1.0062893081761006,
+      "far": 0.8484848484848484
+    },
+    "n_train_examples": 203,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci_plus_constant__REP=integer__EXP=seed_distance__CFG=band1_near_n20__RS=7",
+    "relation": "fibonacci_plus_constant",
+    "band": "band1_near",
+    "n_train": 20,
+    "random_seed": 7,
+    "mean_accuracy": 2.153209109730849,
+    "std_accuracy": 11.036109487222756,
+    "partition_accuracy": {
+      "near": 4.654088050314466,
+      "mid": 1.0062893081761006,
+      "far": 0.8484848484848484
+    },
+    "n_train_examples": 203,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci_plus_constant__REP=integer__EXP=seed_distance__CFG=band2_mid_n20__RS=42",
+    "relation": "fibonacci_plus_constant",
+    "band": "band2_mid",
+    "n_train": 20,
+    "random_seed": 42,
+    "mean_accuracy": 2.111801242236025,
+    "std_accuracy": 10.778460750413808,
+    "partition_accuracy": {
+      "near": 4.528301886792453,
+      "mid": 1.0062893081761006,
+      "far": 0.8484848484848484
+    },
+    "n_train_examples": 187,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci_plus_constant__REP=integer__EXP=seed_distance__CFG=band2_mid_n20__RS=123",
+    "relation": "fibonacci_plus_constant",
+    "band": "band2_mid",
+    "n_train": 20,
+    "random_seed": 123,
+    "mean_accuracy": 2.111801242236025,
+    "std_accuracy": 10.778460750413808,
+    "partition_accuracy": {
+      "near": 4.528301886792453,
+      "mid": 1.0062893081761006,
+      "far": 0.8484848484848484
+    },
+    "n_train_examples": 187,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci_plus_constant__REP=integer__EXP=seed_distance__CFG=band2_mid_n20__RS=7",
+    "relation": "fibonacci_plus_constant",
+    "band": "band2_mid",
+    "n_train": 20,
+    "random_seed": 7,
+    "mean_accuracy": 2.111801242236025,
+    "std_accuracy": 10.778460750413808,
+    "partition_accuracy": {
+      "near": 4.528301886792453,
+      "mid": 1.0062893081761006,
+      "far": 0.8484848484848484
+    },
+    "n_train_examples": 187,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci_plus_constant__REP=integer__EXP=seed_distance__CFG=band3_far_n20__RS=42",
+    "relation": "fibonacci_plus_constant",
+    "band": "band3_far",
+    "n_train": 20,
+    "random_seed": 42,
+    "mean_accuracy": 0.2898550724637681,
+    "std_accuracy": 3.6664088813546423,
+    "partition_accuracy": {
+      "near": 0.880503144654088,
+      "mid": 0.0,
+      "far": 0.0
+    },
+    "n_train_examples": 160,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci_plus_constant__REP=integer__EXP=seed_distance__CFG=band3_far_n20__RS=123",
+    "relation": "fibonacci_plus_constant",
+    "band": "band3_far",
+    "n_train": 20,
+    "random_seed": 123,
+    "mean_accuracy": 0.2898550724637681,
+    "std_accuracy": 3.6664088813546423,
+    "partition_accuracy": {
+      "near": 0.880503144654088,
+      "mid": 0.0,
+      "far": 0.0
+    },
+    "n_train_examples": 160,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=fibonacci_plus_constant__REP=integer__EXP=seed_distance__CFG=band3_far_n20__RS=7",
+    "relation": "fibonacci_plus_constant",
+    "band": "band3_far",
+    "n_train": 20,
+    "random_seed": 7,
+    "mean_accuracy": 0.2898550724637681,
+    "std_accuracy": 3.6664088813546423,
+    "partition_accuracy": {
+      "near": 0.880503144654088,
+      "mid": 0.0,
+      "far": 0.0
+    },
+    "n_train_examples": 160,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=geometric__REP=integer__EXP=seed_distance__CFG=band0_core_n20__RS=42",
+    "relation": "geometric",
+    "band": "band0_core",
+    "n_train": 20,
+    "random_seed": 42,
+    "mean_accuracy": 7.661290322580645,
+    "std_accuracy": 9.748562422368213,
+    "partition_accuracy": {
+      "near": 8.75,
+      "mid": 9.375,
+      "far": 5.113636363636363
+    },
+    "n_train_examples": 102,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=geometric__REP=integer__EXP=seed_distance__CFG=band0_core_n20__RS=123",
+    "relation": "geometric",
+    "band": "band0_core",
+    "n_train": 20,
+    "random_seed": 123,
+    "mean_accuracy": 7.661290322580645,
+    "std_accuracy": 9.748562422368213,
+    "partition_accuracy": {
+      "near": 8.75,
+      "mid": 9.375,
+      "far": 5.113636363636363
+    },
+    "n_train_examples": 102,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=geometric__REP=integer__EXP=seed_distance__CFG=band0_core_n20__RS=7",
+    "relation": "geometric",
+    "band": "band0_core",
+    "n_train": 20,
+    "random_seed": 7,
+    "mean_accuracy": 7.661290322580645,
+    "std_accuracy": 9.748562422368213,
+    "partition_accuracy": {
+      "near": 8.75,
+      "mid": 9.375,
+      "far": 5.113636363636363
+    },
+    "n_train_examples": 102,
+    "n_train_seeds": 20
+  },
+  {
+    "run_id": "REL=geometric__REP=integer__EXP=seed_distance__CFG=band1_near_n20__RS=42",
+    "relation": "geometric",
+    "band": "band1_near",
+    "n_train": 20,
+    "random_seed": 42,
+    "mean_accuracy": 3.5,
+    "std_accuracy": 7.088723439378913,
+    "partition_accuracy": {
+      "near": 0.0,
+      "mid": 0.0,
+      "far": 9.722222222222221
+    },
+    "n_train_examples": 35,
+    "n_train_seeds": 6
+  },
+  {
+    "run_id": "REL=geometric__REP=integer__EXP=seed_distance__CFG=band1_near_n20__RS=123",
+    "relation": "geometric",
+    "band": "band1_near",
+    "n_train": 20,
+    "random_seed": 123,
+    "mean_accuracy": 3.5,
+    "std_accuracy": 7.088723439378913,
+    "partition_accuracy": {
+      "near": 0.0,
+      "mid": 0.0,
+      "far": 9.722222222222221
+    },
+    "n_train_examples": 35,
+    "n_train_seeds": 6
+  },
+  {
+    "run_id": "REL=geometric__REP=integer__EXP=seed_distance__CFG=band1_near_n20__RS=7",
+    "relation": "geometric",
+    "band": "band1_near",
+    "n_train": 20,
+    "random_seed": 7,
+    "mean_accuracy": 3.5,
+    "std_accuracy": 7.088723439378913,
+    "partition_accuracy": {
+      "near": 0.0,
+      "mid": 0.0,
+      "far": 9.722222222222221
+    },
+    "n_train_examples": 35,
+    "n_train_seeds": 6
+  },
+  {
+    "run_id": "REL=geometric__REP=integer__EXP=seed_distance__CFG=band2_mid_n20__RS=42",
+    "relation": "geometric",
+    "band": "band2_mid",
+    "n_train": 20,
+    "random_seed": 42,
+    "mean_accuracy": 0.0,
+    "std_accuracy": 0.0,
+    "partition_accuracy": {
+      "near": 0.0,
+      "mid": 0.0,
+      "far": 0.0
+    },
+    "n_train_examples": 30,
+    "n_train_seeds": 10
+  },
+  {
+    "run_id": "REL=geometric__REP=integer__EXP=seed_distance__CFG=band2_mid_n20__RS=123",
+    "relation": "geometric",
+    "band": "band2_mid",
+    "n_train": 20,
+    "random_seed": 123,
+    "mean_accuracy": 0.0,
+    "std_accuracy": 0.0,
+    "partition_accuracy": {
+      "near": 0.0,
+      "mid": 0.0,
+      "far": 0.0
+    },
+    "n_train_examples": 30,
+    "n_train_seeds": 10
+  },
+  {
+    "run_id": "REL=geometric__REP=integer__EXP=seed_distance__CFG=band2_mid_n20__RS=7",
+    "relation": "geometric",
+    "band": "band2_mid",
+    "n_train": 20,
+    "random_seed": 7,
+    "mean_accuracy": 0.0,
+    "std_accuracy": 0.0,
+    "partition_accuracy": {
+      "near": 0.0,
+      "mid": 0.0,
+      "far": 0.0
+    },
+    "n_train_examples": 30,
+    "n_train_seeds": 10
+  },
+  {
+    "run_id": "REL=geometric__REP=integer__EXP=seed_distance__CFG=band3_far_n20__RS=42",
+    "relation": "geometric",
+    "band": "band3_far",
+    "n_train": 20,
+    "random_seed": 42,
+    "mean_accuracy": 5.46875,
+    "std_accuracy": 8.230979494416202,
+    "partition_accuracy": {
+      "near": 0.0,
+      "mid": 0.0,
+      "far": 14.583333333333334
+    },
+    "n_train_examples": 43,
+    "n_train_seeds": 15
+  },
+  {
+    "run_id": "REL=geometric__REP=integer__EXP=seed_distance__CFG=band3_far_n20__RS=123",
+    "relation": "geometric",
+    "band": "band3_far",
+    "n_train": 20,
+    "random_seed": 123,
+    "mean_accuracy": 5.46875,
+    "std_accuracy": 8.230979494416202,
+    "partition_accuracy": {
+      "near": 0.0,
+      "mid": 0.0,
+      "far": 14.583333333333334
+    },
+    "n_train_examples": 43,
+    "n_train_seeds": 15
+  },
+  {
+    "run_id": "REL=geometric__REP=integer__EXP=seed_distance__CFG=band3_far_n20__RS=7",
+    "relation": "geometric",
+    "band": "band3_far",
+    "n_train": 20,
+    "random_seed": 7,
+    "mean_accuracy": 5.46875,
+    "std_accuracy": 8.230979494416202,
+    "partition_accuracy": {
+      "near": 0.0,
+      "mid": 0.0,
+      "far": 14.583333333333334
+    },
+    "n_train_examples": 43,
+    "n_train_seeds": 15
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "Rule30": {
+    "train": {
+      "n_trajectories": 2000,
+      "n_rows_per_traj": 33,
+      "mean_density": 0.4998719223484849,
+      "std_density": 0.06268174821227167
+    },
+    "id_test": {
+      "n_trajectories": 500,
+      "n_rows_per_traj": 33,
+      "mean_density": 0.5000662878787879,
+      "std_density": 0.06251393109776342
+    },
+    "longer_ood": {
+      "n_trajectories": 500,
+      "n_rows_per_traj": 65,
+      "mean_density": 0.5000855769230769,
+      "std_density": 0.0626980650745319
+    },
+    "density_0.2": {
+      "n_trajectories": 500,
+      "n_rows_per_traj": 33,
+      "mean_density": 0.48030208333333335,
+      "std_density": 0.09247266442126181
+    },
+    "density_0.8": {
+      "n_trajectories": 500,
+      "n_rows_per_traj": 33,
+      "mean_density": 0.49169602272727275,
+      "std_density": 0.10194012511388405
+    }
+  },
+  "Rule90": {
+    "train": {
+      "n_trajectories": 2000,
+      "n_rows_per_traj": 33,
+      "mean_density": 0.4855340909090909,
+      "std_density": 0.1435535085284274
+    },
+    "id_test": {
+      "n_trajectories": 500,
+      "n_rows_per_traj": 33,
+      "mean_density": 0.4844659090909091,
+      "std_density": 0.1448017887438411
+    },
+    "longer_ood": {
+      "n_trajectories": 500,
+      "n_rows_per_traj": 65,
+      "mean_density": 0.2459596153846154,
+      "std_density": 0.26326409589306043
+    },
+    "density_0.2": {
+      "n_trajectories": 500,
+      "n_rows_per_traj": 33,
+      "mean_density": 0.42699621212121214,
+      "std_density": 0.16049616261711258
+    },
+    "density_0.8": {
+      "n_trajectories": 500,
+      "n_rows_per_traj": 33,
+      "mean_density": 0.44558238636363634,
+      "std_density": 0.16862887054823517
+    }
+  }
+}

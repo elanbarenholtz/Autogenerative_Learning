@@ -1,0 +1,117 @@
+{
+  "config": {
+    "width": 64,
+    "n_train": 5000,
+    "n_test": 300,
+    "epochs": 50,
+    "seeds": [
+      42,
+      123,
+      7
+    ],
+    "a_fraction": 0.6,
+    "device": "mps",
+    "scaled": true
+  },
+  "ngram5": {
+    "id_test": {
+      "overall_cell_acc": 61.536458333333336,
+      "a_cell_acc": 61.536458333333336,
+      "b_cell_acc": 0.0,
+      "row_exact_match": 0.0,
+      "a_total": 19200,
+      "b_total": 0
+    },
+    "ood_b_inclusive": {
+      "overall_cell_acc": 49.921875,
+      "a_cell_acc": 50.32554909280319,
+      "b_cell_acc": 49.31649524801458,
+      "row_exact_match": 0.0,
+      "a_total": 11519,
+      "b_total": 7681
+    }
+  },
+  "transformer_aggregate": {
+    "id_test.overall_cell_acc": [
+      99.96875,
+      0.015332918170705387
+    ],
+    "id_test.a_cell_acc": [
+      99.96875,
+      0.015332918170705387
+    ],
+    "id_test.b_cell_acc": [
+      0.0,
+      0.0
+    ],
+    "ood_b_inclusive.overall_cell_acc": [
+      97.97222222222223,
+      1.0581365785683419
+    ],
+    "ood_b_inclusive.a_cell_acc": [
+      98.23769424429203,
+      0.851388163552076
+    ],
+    "ood_b_inclusive.b_cell_acc": [
+      97.57410059454064,
+      1.3871883365191742
+    ]
+  },
+  "transformer_per_seed": {
+    "42": {
+      "id_test": {
+        "overall_cell_acc": 99.984375,
+        "a_cell_acc": 99.984375,
+        "b_cell_acc": 0.0,
+        "row_exact_match": 99.0,
+        "a_total": 19200,
+        "b_total": 0
+      },
+      "ood_b_inclusive": {
+        "overall_cell_acc": 98.09375,
+        "a_cell_acc": 98.18560638944354,
+        "b_cell_acc": 97.95599531311028,
+        "row_exact_match": 26.333333333333332,
+        "a_total": 11519,
+        "b_total": 7681
+      }
+    },
+    "123": {
+      "id_test": {
+        "overall_cell_acc": 99.97395833333333,
+        "a_cell_acc": 99.97395833333333,
+        "b_cell_acc": 0.0,
+        "row_exact_match": 98.33333333333333,
+        "a_total": 19200,
+        "b_total": 0
+      },
+      "ood_b_inclusive": {
+        "overall_cell_acc": 96.61979166666667,
+        "a_cell_acc": 97.22198107474607,
+        "b_cell_acc": 95.71670355422471,
+        "row_exact_match": 9.0,
+        "a_total": 11519,
+        "b_total": 7681
+      }
+    },
+    "7": {
+      "id_test": {
+        "overall_cell_acc": 99.94791666666667,
+        "a_cell_acc": 99.94791666666667,
+        "b_cell_acc": 0.0,
+        "row_exact_match": 96.66666666666667,
+        "a_total": 19200,
+        "b_total": 0
+      },
+      "ood_b_inclusive": {
+        "overall_cell_acc": 99.203125,
+        "a_cell_acc": 99.30549526868651,
+        "b_cell_acc": 99.04960291628694,
+        "row_exact_match": 50.666666666666664,
+        "a_total": 11519,
+        "b_total": 7681
+      }
+    }
+  },
+  "elapsed_sec": 1438.8392090797424
+}

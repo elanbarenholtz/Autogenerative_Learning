@@ -1,0 +1,18 @@
+/Users/elanbarenholtz/Projects/fibonacci-experiment/venv/lib/python3.13/site-packages/torch/nn/modules/transformer.py:431: UserWarning: Support for mismatched src_key_padding_mask and mask is deprecated. Use same type for both instead.
+  src_key_padding_mask = F._canonical_mask(
+
+=== Rule 30 (device=mps) ===
+  ngram5: {'id_test': 51.28, 'longer_ood': 51.38, 'density0.2': 51.03, 'density0.8': 50.96}
+  RS42: {'id_test': 100.0, 'longer_ood': 100.0, 'density0.2': 100.0, 'density0.8': 100.0}
+  RS123: {'id_test': 100.0, 'longer_ood': 100.0, 'density0.2': 100.0, 'density0.8': 100.0}
+  RS7: {'id_test': 100.0, 'longer_ood': 100.0, 'density0.2': 100.0, 'density0.8': 100.0}
+  Rule30 transformer agg: {'id_test': 100.0, 'longer_ood': 100.0, 'density0.2': 100.0, 'density0.8': 100.0}
+
+=== Rule 90 (device=mps) ===
+  ngram5: {'id_test': 49.83, 'longer_ood': 49.76, 'density0.2': 43.74, 'density0.8': 43.94}
+  RS42: {'id_test': 49.96, 'longer_ood': 49.89, 'density0.2': 42.4, 'density0.8': 42.77}
+  RS123: {'id_test': 49.96, 'longer_ood': 49.89, 'density0.2': 42.4, 'density0.8': 42.77}
+  RS7: {'id_test': 49.96, 'longer_ood': 49.89, 'density0.2': 42.4, 'density0.8': 42.77}
+  Rule90 transformer agg: {'id_test': 49.96, 'longer_ood': 49.89, 'density0.2': 42.4, 'density0.8': 42.77}
+
+elapsed 1936s -> /Users/elanbarenholtz/Projects/fibonacci-experiment/recoverability_study/repro_results/ca_repro.json

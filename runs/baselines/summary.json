@@ -1,0 +1,110 @@
+[
+  {
+    "relation": "fibonacci",
+    "tokenizer": "integer_closed",
+    "vocab_size": 185,
+    "train_stats": {
+      "max_value": 1224876,
+      "min_value": 0,
+      "n_unique": 176
+    },
+    "test_stats": {
+      "max_value": 3206767,
+      "min_value": 13,
+      "n_unique": 101
+    },
+    "unk_train": 0,
+    "unk_test": 0,
+    "n_train_examples": 300,
+    "n_test_examples": 75,
+    "baselines": {
+      "ngram_8": {
+        "type": "ngram",
+        "n": 8,
+        "mean_accuracy": 89.33333333333334,
+        "std_accuracy": 3.2659863237108993
+      },
+      "ngram_10": {
+        "type": "ngram",
+        "n": 10,
+        "mean_accuracy": 89.33333333333334,
+        "std_accuracy": 3.2659863237108993
+      },
+      "ngram_12": {
+        "type": "ngram",
+        "n": 12,
+        "mean_accuracy": 89.33333333333334,
+        "std_accuracy": 3.2659863237108993
+      },
+      "knn_5": {
+        "type": "knn",
+        "k": 5,
+        "mean_accuracy": 86.66666666666666,
+        "std_accuracy": 7.302967433402215
+      }
+    },
+    "transformer": {
+      "mean_accuracy": 89.33333333333333,
+      "std_accuracy": 1.4210854715202004e-14,
+      "per_seed_accs": [
+        89.33333333333334,
+        89.33333333333334,
+        89.33333333333334
+      ]
+    }
+  },
+  {
+    "relation": "modular_arithmetic",
+    "tokenizer": "symbol",
+    "vocab_size": 33,
+    "train_stats": {
+      "max_value": 30,
+      "min_value": 0,
+      "n_unique": 31
+    },
+    "test_stats": {
+      "max_value": 30,
+      "min_value": 0,
+      "n_unique": 31
+    },
+    "unk_train": 0,
+    "unk_test": 0,
+    "n_train_examples": 300,
+    "n_test_examples": 75,
+    "baselines": {
+      "ngram_8": {
+        "type": "ngram",
+        "n": 8,
+        "mean_accuracy": 41.333333333333336,
+        "std_accuracy": 35.12517299285198
+      },
+      "ngram_10": {
+        "type": "ngram",
+        "n": 10,
+        "mean_accuracy": 41.333333333333336,
+        "std_accuracy": 35.12517299285198
+      },
+      "ngram_12": {
+        "type": "ngram",
+        "n": 12,
+        "mean_accuracy": 41.333333333333336,
+        "std_accuracy": 35.12517299285198
+      },
+      "knn_5": {
+        "type": "knn",
+        "k": 5,
+        "mean_accuracy": 24.0,
+        "std_accuracy": 20.912516188477497
+      }
+    },
+    "transformer": {
+      "mean_accuracy": 41.333333333333336,
+      "std_accuracy": 0.0,
+      "per_seed_accs": [
+        41.333333333333336,
+        41.333333333333336,
+        41.333333333333336
+      ]
+    }
+  }
+]

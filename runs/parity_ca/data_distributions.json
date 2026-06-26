@@ -1,0 +1,34 @@
+{
+  "train": {
+    "a_count": 320000,
+    "b_count": 0,
+    "total": 320000,
+    "a_fraction": 1.0,
+    "b_fraction": 0.0,
+    "n_windows": 5000
+  },
+  "id_test": {
+    "a_count": 64000,
+    "b_count": 0,
+    "total": 64000,
+    "a_fraction": 1.0,
+    "b_fraction": 0.0,
+    "n_windows": 1000
+  },
+  "ood_b_inclusive": {
+    "a_count": 38321,
+    "b_count": 25679,
+    "total": 64000,
+    "a_fraction": 0.598765625,
+    "b_fraction": 0.401234375,
+    "n_windows": 1000
+  },
+  "ood_max_b": {
+    "a_count": 30715,
+    "b_count": 33285,
+    "total": 64000,
+    "a_fraction": 0.479921875,
+    "b_fraction": 0.520078125,
+    "n_windows": 1000
+  }
+}

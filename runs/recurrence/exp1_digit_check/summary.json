@@ -1,0 +1,68 @@
+[
+  {
+    "relation": "fibonacci",
+    "random_seed": 42,
+    "train_number_exact": 4.666666666666667,
+    "train_token_acc": 60.15850144092219,
+    "test_number_exact": 6.666666666666667,
+    "test_token_acc": 60.19900497512438,
+    "unk_count_train": 0,
+    "unk_count_test": 0,
+    "final_train_loss": 0.30695686042308806
+  },
+  {
+    "relation": "fibonacci",
+    "random_seed": 123,
+    "train_number_exact": 12.333333333333334,
+    "train_token_acc": 65.77809798270893,
+    "test_number_exact": 12.0,
+    "test_token_acc": 62.43781094527363,
+    "unk_count_train": 0,
+    "unk_count_test": 0,
+    "final_train_loss": 0.27111117988824845
+  },
+  {
+    "relation": "fibonacci",
+    "random_seed": 7,
+    "train_number_exact": 7.666666666666667,
+    "train_token_acc": 65.20172910662824,
+    "test_number_exact": 1.3333333333333333,
+    "test_token_acc": 58.45771144278607,
+    "unk_count_train": 0,
+    "unk_count_test": 0,
+    "final_train_loss": 0.29103020429611204
+  },
+  {
+    "relation": "fibonacci_plus_constant",
+    "random_seed": 42,
+    "train_number_exact": 6.666666666666667,
+    "train_token_acc": 66.36171710063336,
+    "test_number_exact": 1.3333333333333333,
+    "test_token_acc": 32.67326732673267,
+    "unk_count_train": 0,
+    "unk_count_test": 0,
+    "final_train_loss": 0.4406117022037506
+  },
+  {
+    "relation": "fibonacci_plus_constant",
+    "random_seed": 123,
+    "train_number_exact": 9.0,
+    "train_token_acc": 66.43209007741028,
+    "test_number_exact": 5.333333333333333,
+    "test_token_acc": 31.435643564356436,
+    "unk_count_train": 0,
+    "unk_count_test": 0,
+    "final_train_loss": 0.461492520570755
+  },
+  {
+    "relation": "fibonacci_plus_constant",
+    "random_seed": 7,
+    "train_number_exact": 4.666666666666667,
+    "train_token_acc": 62.772695285010556,
+    "test_number_exact": 2.6666666666666665,
+    "test_token_acc": 32.17821782178218,
+    "unk_count_train": 0,
+    "unk_count_test": 0,
+    "final_train_loss": 0.38901413679122926
+  }
+]

@@ -1,0 +1,204 @@
+
+======================================================================
+  Dyck-1 Experiment
+======================================================================
+  Vocab size: 5
+  Tokens: {0: 'PAD', 1: 'BOS', 2: 'EOS', 3: '(', 4: ')'}
+
+  Generating data (train=2000, test=500 per split)...
+  Validating all generated sequences...
+    train: 2000 sequences, all valid
+    id_test: 500 sequences, all valid
+    longer_ood: 500 sequences, all valid
+    deeper_ood: 500 sequences, all valid
+    combined_ood: 500 sequences, all valid
+  Computing data distributions...
+    train: mean_len=21.2, mean_depth=4.5
+    id_test: mean_len=20.9, mean_depth=4.5
+    longer_ood: mean_len=69.8, mean_depth=13.7
+    deeper_ood: mean_len=20.8, mean_depth=5.5
+    combined_ood: mean_len=70.5, mean_depth=13.7
+  Computing oracle statistics...
+    train: forced=0.045 (2000/44374)
+    id_test: forced=0.046 (500/10968)
+    longer_ood: forced=0.021 (729/35398)
+    deeper_ood: forced=0.046 (500/10920)
+    combined_ood: forced=0.020 (727/35736)
+
+  Training baselines...
+    Bigram ID: 52.28%
+    N-gram(3) ID: 57.96%
+    N-gram(5) ID: 61.68%
+    kNN(ctx=10) id_test: 58.73% (n=100)
+    kNN(ctx=10) longer_ood: 50.51% (n=100)
+    kNN(ctx=10) deeper_ood: 57.89% (n=100)
+    kNN(ctx=10) combined_ood: 50.67% (n=100)
+    kNN(ctx=10) ID: 58.73%
+    kNN(ctx=20) id_test: 58.36% (n=100)
+    kNN(ctx=20) longer_ood: 51.78% (n=100)
+    kNN(ctx=20) deeper_ood: 56.67% (n=100)
+    kNN(ctx=20) combined_ood: 51.72% (n=100)
+    kNN(ctx=20) ID: 58.36%
+    kNN(ctx=40) id_test: 58.40% (n=100)
+    kNN(ctx=40) longer_ood: 44.71% (n=100)
+    kNN(ctx=40) deeper_ood: 57.24% (n=100)
+    kNN(ctx=40) combined_ood: 43.96% (n=100)
+    kNN(ctx=40) ID: 58.40%
+
+  Training transformers (seeds=[42, 123, 7])...
+
+    --- RS=42 ---
+    Model parameters: 596,101
+/Users/elanbarenholtz/Projects/fibonacci-experiment/venv/lib/python3.13/site-packages/torch/nn/modules/transformer.py:431: UserWarning: Support for mismatched src_key_padding_mask and mask is deprecated. Use same type for both instead.
+  src_key_padding_mask = F._canonical_mask(
+      Epoch 10/50: loss=0.6222, acc=66.25%
+      Epoch 20/50: loss=0.5997, acc=67.03%
+      Epoch 30/50: loss=0.5952, acc=66.89%
+      Epoch 40/50: loss=0.5825, acc=67.65%
+      Epoch 50/50: loss=0.5815, acc=67.70%
+      Training complete. Best loss=0.5815, Final acc=67.70%
+      TF id_test: token_acc=68.44%, exact=0.00%, illegal=0.13%
+      TF longer_ood: token_acc=59.28%, exact=0.00%, illegal=1.70%
+      TF deeper_ood: token_acc=63.65%, exact=0.00%, illegal=0.03%
+      TF combined_ood: token_acc=58.92%, exact=0.00%, illegal=1.66%
+      Free-run greedy: validity=100.00%, mean_len=30.0
+      Free-run sampled: validity=92.50%, mean_len=21.5
+
+    --- RS=123 ---
+    Model parameters: 596,101
+      Epoch 10/50: loss=0.6174, acc=66.14%
+      Epoch 20/50: loss=0.6036, acc=66.58%
+      Epoch 30/50: loss=0.5949, acc=66.79%
+      Epoch 40/50: loss=0.5939, acc=67.04%
+      Epoch 50/50: loss=0.5893, acc=67.12%
+      Training complete. Best loss=0.5878, Final acc=67.12%
+      TF id_test: token_acc=67.90%, exact=0.00%, illegal=0.02%
+      TF longer_ood: token_acc=58.57%, exact=0.00%, illegal=1.71%
+      TF deeper_ood: token_acc=64.53%, exact=0.00%, illegal=0.01%
+      TF combined_ood: token_acc=58.41%, exact=0.00%, illegal=1.70%
+      Free-run greedy: validity=100.00%, mean_len=28.0
+      Free-run sampled: validity=86.00%, mean_len=19.4
+
+    --- RS=7 ---
+    Model parameters: 596,101
+      Epoch 10/50: loss=0.6216, acc=65.98%
+      Epoch 20/50: loss=0.6036, acc=66.74%
+      Epoch 30/50: loss=0.5965, acc=66.87%
+      Epoch 40/50: loss=0.5968, acc=67.24%
+      Epoch 50/50: loss=0.5877, acc=67.38%
+      Training complete. Best loss=0.5877, Final acc=67.38%
+      TF id_test: token_acc=66.62%, exact=0.00%, illegal=2.35%
+      TF longer_ood: token_acc=59.09%, exact=0.00%, illegal=1.68%
+      TF deeper_ood: token_acc=61.87%, exact=0.00%, illegal=1.37%
+      TF combined_ood: token_acc=58.91%, exact=0.00%, illegal=1.64%
+      Free-run greedy: validity=0.00%, mean_len=33.0
+      Free-run sampled: validity=63.50%, mean_len=19.6
+
+  Aggregating transformer results across seeds...
+    id_test: token_acc=67.65 ± 0.76%, illegal=0.83%
+    longer_ood: token_acc=58.98 ± 0.30%, illegal=1.70%
+    deeper_ood: token_acc=63.35 ± 1.11%, illegal=0.47%
+    combined_ood: token_acc=58.74 ± 0.24%, illegal=1.67%
+  Saved qualitative samples to experiments_v2/exp_dyck/qualitative_samples_D1.txt
+
+======================================================================
+  Dyck-2 Experiment
+======================================================================
+  Vocab size: 7
+  Tokens: {0: 'PAD', 1: 'BOS', 2: 'EOS', 3: '(', 4: ')', 5: '[', 6: ']'}
+
+  Generating data (train=2000, test=500 per split)...
+  Validating all generated sequences...
+    train: 2000 sequences, all valid
+    id_test: 500 sequences, all valid
+    longer_ood: 500 sequences, all valid
+    deeper_ood: 500 sequences, all valid
+    combined_ood: 500 sequences, all valid
+  Computing data distributions...
+    train: mean_len=21.2, mean_depth=4.5
+    id_test: mean_len=20.9, mean_depth=4.5
+    longer_ood: mean_len=69.8, mean_depth=13.7
+    deeper_ood: mean_len=20.8, mean_depth=5.5
+    combined_ood: mean_len=70.5, mean_depth=13.7
+  Computing oracle statistics...
+    train: forced=0.000 (0/44374)
+    id_test: forced=0.000 (0/10968)
+    longer_ood: forced=0.006 (229/35398)
+    deeper_ood: forced=0.000 (0/10920)
+    combined_ood: forced=0.006 (227/35736)
+
+  Training baselines...
+    Bigram ID: 38.69%
+    N-gram(3) ID: 43.81%
+    N-gram(5) ID: 45.85%
+    kNN(ctx=10) id_test: 38.32% (n=100)
+    kNN(ctx=10) longer_ood: 35.75% (n=100)
+    kNN(ctx=10) deeper_ood: 37.62% (n=100)
+    kNN(ctx=10) combined_ood: 35.43% (n=100)
+    kNN(ctx=10) ID: 38.32%
+    kNN(ctx=20) id_test: 35.92% (n=100)
+    kNN(ctx=20) longer_ood: 32.81% (n=100)
+    kNN(ctx=20) deeper_ood: 35.14% (n=100)
+    kNN(ctx=20) combined_ood: 31.65% (n=100)
+    kNN(ctx=20) ID: 35.92%
+    kNN(ctx=40) id_test: 35.69% (n=100)
+    kNN(ctx=40) longer_ood: 27.79% (n=100)
+    kNN(ctx=40) deeper_ood: 34.96% (n=100)
+    kNN(ctx=40) combined_ood: 27.76% (n=100)
+    kNN(ctx=40) ID: 35.69%
+
+  Training transformers (seeds=[42, 123, 7])...
+
+    --- RS=42 ---
+    Model parameters: 596,615
+      Epoch 10/50: loss=1.0376, acc=50.78%
+      Epoch 20/50: loss=0.9837, acc=52.82%
+      Epoch 30/50: loss=0.9648, acc=53.66%
+      Epoch 40/50: loss=0.9517, acc=53.84%
+      Epoch 50/50: loss=0.9528, acc=53.84%
+      Training complete. Best loss=0.9451, Final acc=53.84%
+      TF id_test: token_acc=56.14%, exact=0.00%, illegal=0.30%
+      TF longer_ood: token_acc=41.51%, exact=0.00%, illegal=18.27%
+      TF deeper_ood: token_acc=52.38%, exact=0.00%, illegal=3.74%
+      TF combined_ood: token_acc=41.56%, exact=0.00%, illegal=19.05%
+      Free-run greedy: validity=100.00%, mean_len=12.0
+      Free-run sampled: validity=96.50%, mean_len=15.8
+
+    --- RS=123 ---
+    Model parameters: 596,615
+      Epoch 10/50: loss=1.0274, acc=51.23%
+      Epoch 20/50: loss=0.9778, acc=52.95%
+      Epoch 30/50: loss=0.9640, acc=53.63%
+      Epoch 40/50: loss=0.9562, acc=53.65%
+      Epoch 50/50: loss=0.9495, acc=54.11%
+      Training complete. Best loss=0.9445, Final acc=54.11%
+      TF id_test: token_acc=55.61%, exact=0.00%, illegal=0.40%
+      TF longer_ood: token_acc=43.09%, exact=0.00%, illegal=12.95%
+      TF deeper_ood: token_acc=51.83%, exact=0.00%, illegal=2.05%
+      TF combined_ood: token_acc=43.40%, exact=0.00%, illegal=12.76%
+      Free-run greedy: validity=100.00%, mean_len=12.0
+      Free-run sampled: validity=81.00%, mean_len=22.0
+
+    --- RS=7 ---
+    Model parameters: 596,615
+      Epoch 10/50: loss=1.0359, acc=51.01%
+      Epoch 20/50: loss=0.9961, acc=52.50%
+      Epoch 30/50: loss=0.9735, acc=53.22%
+      Epoch 40/50: loss=0.9633, acc=53.45%
+      Epoch 50/50: loss=0.9524, acc=53.82%
+      Training complete. Best loss=0.9519, Final acc=53.82%
+      TF id_test: token_acc=55.88%, exact=0.20%, illegal=0.53%
+      TF longer_ood: token_acc=42.02%, exact=0.00%, illegal=16.51%
+      TF deeper_ood: token_acc=51.94%, exact=0.40%, illegal=3.04%
+      TF combined_ood: token_acc=41.61%, exact=0.00%, illegal=17.39%
+      Free-run greedy: validity=100.00%, mean_len=6.0
+      Free-run sampled: validity=87.00%, mean_len=17.2
+
+  Aggregating transformer results across seeds...
+    id_test: token_acc=55.87 ± 0.22%, illegal=0.41%
+    longer_ood: token_acc=42.20 ± 0.66%, illegal=15.91%
+    deeper_ood: token_acc=52.05 ± 0.24%, illegal=2.94%
+    combined_ood: token_acc=42.19 ± 0.86%, illegal=16.40%
+  Saved qualitative samples to experiments_v2/exp_dyck/qualitative_samples_D2.txt
+
+DONE in 950s -> experiments_v2/exp_dyck/summary.json

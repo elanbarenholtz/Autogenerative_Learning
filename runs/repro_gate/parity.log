@@ -1,0 +1,17 @@
+/Users/elanbarenholtz/Projects/fibonacci-experiment/venv/lib/python3.13/site-packages/torch/nn/modules/transformer.py:431: UserWarning: Support for mismatched src_key_padding_mask and mask is deprecated. Use same type for both instead.
+  src_key_padding_mask = F._canonical_mask(
+|A|=1228 |B|=820  device=mps
+oracle 100% all splits: PASS
+ngram5 id_test: overall=61.54 A=61.54 B=0.00
+ngram5 ood_b_inclusive: overall=49.92 A=50.33 B=49.32
+RS42 id_test: overall=99.98 A=99.98 B=0.00 gap=99.98
+RS42 ood_b_inclusive: overall=98.09 A=98.19 B=97.96 gap=0.23
+RS123 id_test: overall=99.97 A=99.97 B=0.00 gap=99.97
+RS123 ood_b_inclusive: overall=96.62 A=97.22 B=95.72 gap=1.51
+RS7 id_test: overall=99.95 A=99.95 B=0.00 gap=99.95
+RS7 ood_b_inclusive: overall=99.20 A=99.31 B=99.05 gap=0.26
+
+=== SUMMARY ===
+OOD B-incl transformer: overall=97.97%, A=98.24%, B=97.57%
+OOD B-incl n-gram(5):   B=49.32%
+elapsed 1439s -> /Users/elanbarenholtz/Projects/fibonacci-experiment/recoverability_study/repro_results/parity_repro.json
