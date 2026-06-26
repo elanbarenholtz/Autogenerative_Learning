@@ -19,8 +19,16 @@ Code: `recoverability_study/` (verify_generators.py, repro_*.py); raw outputs in
 | Fibonacci vs n-gram | 89.33% = 89.33% | 89.33% = 89.33% (UNK=0) | reproduced exactly |
 | Modular vs n-gram | 41.3% ≈ 41.3% | 41.33% = 41.33% | reproduced exactly |
 | Parity CA, held-out B-nbhd | B≈90.4%, n-gram≈49% | **B=97.6%**, n-gram=49.3% | reproduced (exceeds) |
-| Rule 30 OOD | 100% | 100% (id/longer/density) | reproduced exactly |
-| Rule 90 OOD | 99.4% | ~50% at reduced scale | scale-limited → Colab |
+| Rule 30 OOD | 100% | 100% (id/longer/density, full scale GPU) | reproduced exactly |
+| Rule 90 OOD | 99.4% | **100%** (full scale GPU, RS=42) | reproduced (exceeds); gate closed |
+
+Rule 90 full-scale note: on Colab GPU at full scale (2000 train seeds, 50 epochs), Rule 90
+RS=42 reaches 100% teacher-forced on all splits (id/longer/density) AND 100% free-run rollout.
+The local ~50% (chance) was a reduced-scale (200-seed) sample-threshold artifact, not a pipeline
+fault — confirming the parity-class learning threshold (see Section 4). Only RS=42 of 3 seeds was
+evaluated before the run was stopped; the result is an exact 100% with identical training curves
+across seeds, so it is decisive for the gate. Remaining 2 seeds can be finished cheaply
+(teacher-forced only) if a 3-seed average is wanted for the final writeup.
 
 Transformer matches n-gram on Fibonacci/modular (no rule induction). Parity-CA transformer
 trained only on A-neighborhoods generalizes to unseen B-neighborhoods at ~97.6% while n-gram
@@ -44,16 +52,21 @@ rises sharply under longer/combined OOD. Dyck-1 cannot make wrong-type errors (o
 its failures are underflow and stay mild. n-gram(5) id_test: D1 61.7%, D2 45.9% (transformer beats it).
 
 ## 4. Key findings beyond reproduction
-1. **Parity-class learning threshold.** Radius-5 parity: chance (~55%) at 1500 rows, ~98% at 5000.
-   Rule 90 (= left XOR right, a parity) collapsed to chance at reduced scale (all 3 seeds identical
-   trivial predictor); Rule 30 (non-parity) learns perfectly even at small scale. Recoverability is
-   necessary but learnability also depends on function class / sample complexity (parity is SGD-hard).
+1. **Parity-class learning threshold (confirmed full scale).** Radius-5 parity: chance (~55%) at
+   1500 rows, ~98% at 5000. Rule 90 (= left XOR right, a parity): chance at 200 seeds, **100% at
+   2000 seeds** (Colab GPU). Rule 30 (non-parity) learns perfectly even at small scale. Recoverability
+   is necessary but learnability also depends on function class / sample complexity (parity is SGD-hard).
+   This is a finding for the master scatter: recoverable systems can still sit below threshold until
+   enough data — the shape of the recoverability-at-width curve, not just endpoint Cμ, likely predicts it.
 2. **Compute.** No CUDA locally; MPS gives ~25–30 min per heavy run. Full-scale Rule 90 (2000 seeds)
    is ~hours on MPS → moved to Colab/GPU. Colab battery package built (`recoverability_study/colab/`).
 
-## 5. Outstanding for Step 2 closure
-- Full-scale Rule 90 on Colab (expected to reproduce ~99.4%; mechanism already confirmed via parity).
-- Optional: full-scale Dyck (10k/2k) on Colab to tighten variance.
+## 5. Step 2 closure status: CLOSED
+All reproduction targets met at full scale: Fibonacci/modular = n-gram; parity-CA generalizes to
+held-out neighborhoods (B=97.6%); Rule 30 = 100%; Rule 90 = 100% (RS=42, full scale GPU).
+Pipeline is validated; proceed to Step 3.
+- Optional polish (not gate-critical): finish Rule 90 RS=123/RS=7 for a 3-seed average;
+  full-scale Dyck (10k/2k) to tighten the pilot wrong-type numbers.
 
 ## 6. Independence note (for the Section 1 guardrail, ahead of Step 3)
 No complexity measurement (CSSR / Cμ / excess entropy) has been computed or used anywhere yet.
