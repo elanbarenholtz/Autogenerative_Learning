@@ -40,8 +40,8 @@ python src/repro_ca.py              # Rule 30/90 (scaled)
 python src/repro_dyck.py            # Dyck-1/2 (MPS)
 ```
 
-GPU (full scale): upload `notebooks/colab/recoverability_code.zip` to the Colab notebook
-`notebooks/colab/run_battery_colab.ipynb` (set runtime to GPU) and run top to bottom.
+GPU (full scale): upload `colab/recoverability_code.zip` to the Colab notebook
+`colab/run_battery_colab.ipynb` (set runtime to GPU) and run top to bottom.
 
 ## Status
 
