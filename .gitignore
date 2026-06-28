@@ -19,3 +19,7 @@ __pycache__/
 # Scratch
 *.tmp
 *.log.swp
+
+# Large raw result archives (extracted into runs/ instead)
+battery_results.zip
+/runs [0-9]*/
