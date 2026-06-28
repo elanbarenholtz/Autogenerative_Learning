@@ -1,0 +1,15 @@
+device=mps train_width=64 test_widths=[32, 48, 64, 96, 128] max_seq=706
+train: 3400 windows, seq_len=326
+/Users/elanbarenholtz/Projects/fibonacci-experiment/venv/lib/python3.13/site-packages/torch/nn/modules/transformer.py:431: UserWarning: Support for mismatched src_key_padding_mask and mask is deprecated. Use same type for both instead.
+  src_key_padding_mask = F._canonical_mask(
+RS42: W32=50.1%  W48=49.7%  W64=99.8%  W96=50.1%  W128=50.0%
+RS123: W32=50.0%  W48=49.8%  W64=99.8%  W96=49.5%  W128=49.4%
+RS7: W32=50.2%  W48=50.0%  W64=98.3%  W96=49.7%  W128=49.8%
+
+=== width-generalization (Rule 30, train W=64, 3-seed mean cell acc) ===
+  W= 32:  50.08% ± 0.07 narrower
+  W= 48:  49.83% ± 0.11 narrower
+  W= 64:  99.30% ± 0.73 (train)
+  W= 96:  49.80% ± 0.23 wider->new positions
+  W=128:  49.74% ± 0.26 wider->new positions
+elapsed 1634s -> runs/width_gen/width_gen.json

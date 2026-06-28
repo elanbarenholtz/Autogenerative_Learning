@@ -1,0 +1,12 @@
+device=mps model=RoPE params=596,614
+RS42: W32=49.2%  W48=47.6%  W64=100.0%  W96=49.1%  W128=49.2%
+RS123: W32=48.8%  W48=47.7%  W64=100.0%  W96=43.5%  W128=39.1%
+RS7: W32=50.2%  W48=50.0%  W64=99.2%  W96=48.3%  W128=46.6%
+
+=== width-generalization (Rule 30, RoPE, train W=64, 3-seed mean) ===
+  W= 32:  49.40% ± 0.60 narrower
+  W= 48:  48.43% ± 1.08 narrower
+  W= 64:  99.74% ± 0.37 (train)
+  W= 96:  46.94% ± 2.47 wider
+  W=128:  44.96% ± 4.31 wider
+elapsed 1504s
