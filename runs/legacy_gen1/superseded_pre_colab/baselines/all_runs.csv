@@ -1,0 +1,13 @@
+run_id,mean_accuracy,std_accuracy,n_seeds,best_train_loss,final_train_acc
+REL=fibonacci__REP=integer_closed__EXP=baselines__CFG=transformer__RS=42,89.33333333333334,3.2659863237108993,5,0.005288291140459478,100.0
+REL=fibonacci__REP=integer_closed__EXP=baselines__CFG=transformer__RS=123,89.33333333333334,3.2659863237108993,5,0.005470616649836302,100.0
+REL=fibonacci__REP=integer_closed__EXP=baselines__CFG=transformer__RS=7,89.33333333333334,3.2659863237108993,5,0.005585043877363205,100.0
+REL=modular_arithmetic__REP=symbol__EXP=baselines__CFG=transformer__RS=42,40.0,33.46640106136302,5,0.0137466240208596,94.33333333333333
+REL=modular_arithmetic__REP=symbol__EXP=baselines__CFG=transformer__RS=123,41.333333333333336,35.12517299285198,5,0.01253799363039434,100.0
+REL=modular_arithmetic__REP=symbol__EXP=baselines__CFG=transformer__RS=7,41.333333333333336,35.12517299285198,5,0.014212283864617347,100.0
+REL=fibonacci__REP=integer_closed__EXP=baselines__CFG=transformer__RS=42,89.33333333333334,3.2659863237108993,5,0.005285831959918141,100.0
+REL=fibonacci__REP=integer_closed__EXP=baselines__CFG=transformer__RS=123,89.33333333333334,3.2659863237108993,5,0.0054681232199072834,100.0
+REL=fibonacci__REP=integer_closed__EXP=baselines__CFG=transformer__RS=7,89.33333333333334,3.2659863237108993,5,0.005583309009671212,100.0
+REL=modular_arithmetic__REP=symbol__EXP=baselines__CFG=transformer__RS=42,41.333333333333336,35.12517299285198,5,0.009159607742913068,100.0
+REL=modular_arithmetic__REP=symbol__EXP=baselines__CFG=transformer__RS=123,41.333333333333336,35.12517299285198,5,0.01454961420968175,100.0
+REL=modular_arithmetic__REP=symbol__EXP=baselines__CFG=transformer__RS=7,41.333333333333336,35.12517299285198,5,0.010724138189107179,100.0
