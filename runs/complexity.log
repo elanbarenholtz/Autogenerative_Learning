@@ -1,0 +1,16 @@
+  iid_fair       Cmu=-0.000 (analytic)
+  golden_mean    Cmu=0.918 (analytic)
+  order2_markov  Cmu=1.896 (analytic)
+  markov1      Cmu_peak=0.998 (L=1, states=2, growing=False) hmu=0.934 E=0.064 [4s]
+  markov2      Cmu_peak=1.779 (L=2, states=4, growing=False) hmu=0.802 E=0.175 [4s]
+  markov3      Cmu_peak=2.776 (L=3, states=8, growing=False) hmu=0.840 E=0.257 [4s]
+  CA_rule30    Cmu_peak=5.161 (L=6, states=47, growing=False) hmu=0.002 E=6.289 [15s]
+  CA_rule90    Cmu_peak=2.327 (L=5, states=17, growing=False) hmu=0.002 E=3.144 [10s]
+  CA_rule110   Cmu_peak=5.153 (L=6, states=46, growing=False) hmu=0.009 E=6.446 [12s]
+  CA_rule150   Cmu_peak=2.529 (L=5, states=8, growing=False) hmu=-0.000 E=5.625 [10s]
+  dyck1        Cmu_peak=3.570 (L=4, states=13, growing=False) hmu=0.825 E=0.966 [1s]
+  dyck2        Cmu_peak=3.100 (L=4, states=13, growing=False) hmu=0.197 E=5.188 [2s]
+  fib_mod31    Cmu_peak=4.954 (L=2, states=31, growing=True) hmu=-0.000 E=9.908 [8s]
+
+FROZEN -> runs/complexity/complexity_table.json  (77.9s)
+figures -> runs/complexity/recoverability_at_width.png, cmu_vs_E.png

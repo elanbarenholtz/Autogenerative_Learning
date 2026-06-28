@@ -51,10 +51,12 @@ def recoverability_at_width(H):
     return H[1:] - H[:-1]      # index w -> conditional entropy given w previous symbols
 
 
-def entropy_rate(H, tail=3):
-    """hmu estimate = mean of the last `tail` finite-difference values H[L]-H[L-1]."""
+def entropy_rate(H, tail=2):
+    """hmu = floor of the recoverability curve = min of the last `tail` finite
+    differences H[L]-H[L-1]. (Robust when the curve drops sharply near the end,
+    e.g. deterministic recurrences where r(w) hits 0 at small w.)"""
     diffs = np.diff(H)
-    return float(np.mean(diffs[-tail:]))
+    return float(np.min(diffs[-tail:]))
 
 
 def excess_entropy(H, fit_from=None):
