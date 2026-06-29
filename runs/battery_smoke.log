@@ -1,0 +1,32 @@
+
+=== CA_rule90 (A_ca) ===
+/Users/elanbarenholtz/Projects/fibonacci-experiment/venv/lib/python3.13/site-packages/torch/nn/modules/transformer.py:431: UserWarning: Support for mismatched src_key_padding_mask and mask is deprecated. Use same type for both instead.
+  src_key_padding_mask = F._canonical_mask(
+  seed42: id_test gap=1.026 acc=0.55 | longer_ood gap=1.029 acc=0.55
+  -> id gap=1.026 | prod n/a | Cmu=2.3268 E=3.14377 [3.9s]
+
+=== dyck2 (B_dyck) ===
+  seed42: id_test gap=1.620 acc=0.43 | longer_ood gap=1.818 acc=0.39 | deeper_ood gap=1.662 acc=0.42 | combined_ood gap=1.803 acc=0.39
+  -> id gap=1.620 | prod nov-val=0.03 | Cmu=3.1005 E=5.18765 [1.2s]
+
+=== counter_anbn (B_counter) ===
+  seed42: id_test gap=0.411 acc=0.92 | longer_ood gap=0.157 acc=0.97
+  -> id gap=0.411 | prod nov-val=0.00 | Cmu=2.1306 E=1.43767 [1.1s]
+
+=== fib_mod31 (B_recur) ===
+  seed42: id_test gap=4.971 acc=0.04 | novel_seeds_ood gap=4.980 acc=0.03
+  -> id gap=4.971 | prod nov-val=0.00 | Cmu=4.9539 E=9.90836 [0.6s]
+
+=== physics (C_physics) ===
+  seed42: id_test gap=0.317 acc=0.86 | ood_regime gap=0.317 acc=0.86
+  -> id gap=0.317 | prod nov-val=0.00 | Cmu=5.7937 E=7.56226 [5.4s]
+
+=== language (D_language) ===
+  seed42: id_test gap=3.946 acc=0.19 | held_out gap=3.864 acc=0.16
+  -> id gap=3.946 | prod nov-val=1.00 | Cmu=8.8148 E=8.47234 [2.7s]
+
+=== language_ngram (D_language) ===
+  seed42: id_test gap=3.805 acc=0.17 | held_out gap=3.749 acc=0.16
+  -> id gap=3.805 | prod nov-val=1.00 | Cmu=9.0357 E=7.96824 [2.7s]
+
+wrote runs/battery/results.json
