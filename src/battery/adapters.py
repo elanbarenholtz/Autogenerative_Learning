@@ -154,16 +154,24 @@ def language_adapter(control=None, seq_len=128, small=False):
     if small:
         for k in splits:
             splits[k] = splits[k][:80]
-    # soft validity proxy: fraction of generated chars that are alphabetic/space (very soft)
-    import string
-    ok = set(tok.encode(string.ascii_letters + " .,'\n"))
-    def validator(s):
-        gen = s[10:]
-        return sum(1 for c in gen if c in ok) / max(1, len(gen)) > 0.85
+    # acceptability proxy: fraction of generated words that are REAL words (corpus vocab).
+    import re
+    from collections import Counter
+    text = gl.load_corpus(path)
+    wc = Counter(re.findall(r"[a-z]+", text.lower()))
+    word_set = {w for w, c in wc.items() if c >= 2 and len(w) >= 2}
+    def word_rate(s):
+        txt = tok.decode(s[10:]).lower()
+        ws = [w for w in re.findall(r"[a-z]+", txt) if len(w) >= 2]
+        if not ws:
+            return 0.0
+        return sum(1 for w in ws if w in word_set) / len(ws)
     return Adapter(name, 'D_language', b['vocab_size'], 0, splits, scored_all,
                    oracle_entropy=lambda s: [floor] * (len(s) - 1),
-                   validator=validator, free_run_prompt=lambda: splits['id_test'][0][:10],
-                   free_run_len=120, note=f'char-level; floor(hmu)={floor:.2f}; validity is SOFT')
+                   validator=lambda s: word_rate(s) > 0.6, soft_score=word_rate,
+                   free_run_prompt=lambda: splits['id_test'][0][:10],
+                   free_run_len=120,
+                   note=f'char-level; floor(hmu)={floor:.2f}; productivity = real-word-rate (soft but grounded)')
 
 
 def build_all(small=False):

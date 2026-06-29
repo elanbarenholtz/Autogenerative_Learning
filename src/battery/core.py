@@ -34,6 +34,7 @@ class Adapter:
     validator: Optional[Callable[[List[int]], bool]] = None
     free_run_prompt: Optional[Callable[[], List[int]]] = None            # returns a BOS-ish prompt
     free_run_len: int = 64
+    soft_score: Optional[Callable[[List[int]], float]] = None            # continuous [0,1] quality (e.g. word-rate)
     note: str = ""
 
 
@@ -145,6 +146,7 @@ def free_run_productivity(model, adapter, device, n_samples=200, temperature=1.0
         return {'available': False}
     train_set = set(tuple(s) for s in adapter.splits['train'][:max_eval_train])
     valid = novel = novel_valid = 0
+    soft_total = 0.0
     seen = set()
     for k in range(n_samples):
         toks = list(adapter.free_run_prompt())
@@ -157,8 +159,13 @@ def free_run_productivity(model, adapter, device, n_samples=200, temperature=1.0
         is_valid = bool(adapter.validator(toks))
         is_novel = tuple(toks) not in train_set
         valid += is_valid; novel += is_novel; novel_valid += (is_valid and is_novel)
+        if adapter.soft_score is not None:
+            soft_total += float(adapter.soft_score(toks))
         if is_valid:
             seen.add(tuple(toks))
-    return {'available': True, 'validity_rate': valid / n_samples,
-            'novelty_rate': novel / n_samples, 'novelty_validity_rate': novel_valid / n_samples,
-            'coverage_distinct_valid': len(seen), 'n_samples': n_samples}
+    out = {'available': True, 'validity_rate': valid / n_samples,
+           'novelty_rate': novel / n_samples, 'novelty_validity_rate': novel_valid / n_samples,
+           'coverage_distinct_valid': len(seen), 'n_samples': n_samples}
+    if adapter.soft_score is not None:
+        out['mean_soft_score'] = soft_total / n_samples
+    return out
