@@ -1,0 +1,381 @@
+{
+  "_meta": {
+    "created": "2026-06-29T15:32:53",
+    "model_free": true,
+    "computed_from": "raw serialized sequences only; no trained model read; before training these generators",
+    "note_physics": "measured on ball-cell coordinate stream (info-equivalent to rendered grid; frame scaffolding dropped for tractability)",
+    "note_position": "query-answer tasks; stationary-process measures are reported but less natural than for streams",
+    "note_language": "char-level; CSSR Cmu unreliable at this alphabet/data -> use E and recoverability curve",
+    "elapsed_sec": 714.6
+  },
+  "counter_anbn": {
+    "alphabet_size": 4,
+    "n_sequences": 4000,
+    "n_tokens": 91404,
+    "entropy_rate_hmu": 0.17457,
+    "excess_entropy_E": 1.43767,
+    "recoverability_at_width": [
+      1.42817,
+      0.22928,
+      0.25257,
+      0.23375,
+      0.23131,
+      0.23386,
+      0.23016,
+      0.22364,
+      0.21784,
+      0.21451,
+      0.20776,
+      0.19649,
+      0.18609,
+      0.17457
+    ],
+    "Cmu_cssr_peak": 2.1306,
+    "Cmu_peak_L": 8,
+    "n_states_peak": 5,
+    "Cmu_still_growing_at_range_end": false,
+    "Cmu_state_curve_by_L": {
+      "1": 3,
+      "2": 4,
+      "3": 6,
+      "4": 5,
+      "5": 6,
+      "6": 5,
+      "7": 6,
+      "8": 5
+    },
+    "Cmu_curve_by_L": {
+      "1": 1.2224,
+      "2": 1.4559,
+      "3": 1.6995,
+      "4": 1.8091,
+      "5": 1.9534,
+      "6": 2.0168,
+      "7": 2.1104,
+      "8": 2.1306
+    },
+    "undersampled_at_Lmax": false,
+    "group": "B_counter",
+    "note": "a^n b^n"
+  },
+  "counter_anbncn": {
+    "alphabet_size": 5,
+    "n_sequences": 4000,
+    "n_tokens": 104117,
+    "entropy_rate_hmu": 0.16236,
+    "excess_entropy_E": 2.35829,
+    "recoverability_at_width": [
+      1.93098,
+      0.35422,
+      0.38305,
+      0.35071,
+      0.35088,
+      0.31671,
+      0.33531,
+      0.29822,
+      0.29353,
+      0.26849,
+      0.26058,
+      0.21311,
+      0.2204,
+      0.16236
+    ],
+    "Cmu_cssr_peak": 3.1752,
+    "Cmu_peak_L": 8,
+    "n_states_peak": 11,
+    "Cmu_still_growing_at_range_end": true,
+    "Cmu_state_curve_by_L": {
+      "1": 4,
+      "2": 6,
+      "3": 9,
+      "4": 9,
+      "5": 9,
+      "6": 9,
+      "7": 9,
+      "8": 11
+    },
+    "Cmu_curve_by_L": {
+      "1": 1.7637,
+      "2": 2.1281,
+      "3": 2.4913,
+      "4": 2.6604,
+      "5": 2.8066,
+      "6": 2.8862,
+      "7": 2.9548,
+      "8": 3.1752
+    },
+    "undersampled_at_Lmax": false,
+    "group": "B_counter",
+    "note": "a^n b^n c^n"
+  },
+  "pos_kth": {
+    "alphabet_size": 33,
+    "n_sequences": 4000,
+    "n_tokens": 75959,
+    "entropy_rate_hmu": -0.13441,
+    "excess_entropy_E": 13.07255,
+    "recoverability_at_width": [
+      3.42509,
+      2.84634,
+      2.56368,
+      2.45157,
+      2.53731,
+      1.87968,
+      0.53793,
+      0.00659,
+      -0.10678,
+      -0.13441
+    ],
+    "Cmu_cssr_peak": 0.9992,
+    "Cmu_peak_L": 2,
+    "n_states_peak": 4,
+    "Cmu_still_growing_at_range_end": false,
+    "Cmu_state_curve_by_L": {
+      "1": 3,
+      "2": 4,
+      "3": 3,
+      "4": 1,
+      "5": 0,
+      "6": 0
+    },
+    "Cmu_curve_by_L": {
+      "1": 0.7765,
+      "2": 0.9992,
+      "3": 0.6096,
+      "4": -0.0,
+      "5": 0.0,
+      "6": 0.0
+    },
+    "undersampled_at_Lmax": true,
+    "group": "B_position",
+    "note": "query-answer; stationary measures less natural"
+  },
+  "pos_middle": {
+    "alphabet_size": 9,
+    "n_sequences": 4000,
+    "n_tokens": 74388,
+    "entropy_rate_hmu": -0.13848,
+    "excess_entropy_E": 12.42983,
+    "recoverability_at_width": [
+      3.06113,
+      2.74912,
+      2.44476,
+      2.59075,
+      2.57508,
+      2.04932,
+      0.67934,
+      0.04171,
+      -0.10347,
+      -0.13848
+    ],
+    "Cmu_cssr_peak": 0.8477,
+    "Cmu_peak_L": 2,
+    "n_states_peak": 3,
+    "Cmu_still_growing_at_range_end": false,
+    "Cmu_state_curve_by_L": {
+      "1": 2,
+      "2": 3,
+      "3": 3,
+      "4": 2,
+      "5": 0,
+      "6": 0
+    },
+    "Cmu_curve_by_L": {
+      "1": 0.5108,
+      "2": 0.8477,
+      "3": 0.377,
+      "4": 0.016,
+      "5": 0.0,
+      "6": 0.0
+    },
+    "undersampled_at_Lmax": true,
+    "group": "B_position",
+    "note": "query-answer"
+  },
+  "pos_last2": {
+    "alphabet_size": 9,
+    "n_sequences": 4000,
+    "n_tokens": 76067,
+    "entropy_rate_hmu": -0.08505,
+    "excess_entropy_E": 10.99559,
+    "recoverability_at_width": [
+      3.05614,
+      2.74763,
+      2.74671,
+      2.11806,
+      2.21852,
+      1.89313,
+      0.89381,
+      0.33106,
+      0.07846,
+      -0.08505
+    ],
+    "Cmu_cssr_peak": 1.225,
+    "Cmu_peak_L": 3,
+    "n_states_peak": 9,
+    "Cmu_still_growing_at_range_end": false,
+    "Cmu_state_curve_by_L": {
+      "1": 2,
+      "2": 2,
+      "3": 9,
+      "4": 9,
+      "5": 2,
+      "6": 1
+    },
+    "Cmu_curve_by_L": {
+      "1": 0.5029,
+      "2": 0.6719,
+      "3": 1.225,
+      "4": 1.1137,
+      "5": 0.0651,
+      "6": -0.0
+    },
+    "undersampled_at_Lmax": true,
+    "group": "B_position",
+    "note": "query-answer"
+  },
+  "physics_v1": {
+    "alphabet_size": 12,
+    "n_sequences": 3000,
+    "n_tokens": 240000,
+    "entropy_rate_hmu": 0.55115,
+    "excess_entropy_E": 7.56226,
+    "recoverability_at_width": [
+      3.58495,
+      3.58457,
+      1.41492,
+      1.38093,
+      1.11929,
+      1.0427,
+      0.83091,
+      0.7308,
+      0.62349,
+      0.55115
+    ],
+    "Cmu_cssr_peak": 5.7937,
+    "Cmu_peak_L": 5,
+    "n_states_peak": 78,
+    "Cmu_still_growing_at_range_end": true,
+    "Cmu_state_curve_by_L": {
+      "1": 2,
+      "2": 12,
+      "3": 35,
+      "4": 66,
+      "5": 78,
+      "6": 54
+    },
+    "Cmu_curve_by_L": {
+      "1": 0.8102,
+      "2": 3.5849,
+      "3": 4.9631,
+      "4": 5.6645,
+      "5": 5.7937,
+      "6": 5.2206
+    },
+    "undersampled_at_Lmax": true,
+    "group": "C_physics",
+    "note": "ball-cell coords; hidden velocity"
+  },
+  "language": {
+    "alphabet_size": 97,
+    "n_sequences": 1,
+    "n_tokens": 459866,
+    "entropy_rate_hmu": 0.76696,
+    "excess_entropy_E": 8.47234,
+    "recoverability_at_width": [
+      4.4943,
+      3.56748,
+      2.76884,
+      2.14013,
+      1.68811,
+      1.33848,
+      1.03574,
+      0.76696
+    ],
+    "Cmu_cssr_peak": 8.8148,
+    "Cmu_peak_L": 3,
+    "n_states_peak": 863,
+    "Cmu_still_growing_at_range_end": true,
+    "Cmu_state_curve_by_L": {
+      "1": 70,
+      "2": 419,
+      "3": 863
+    },
+    "Cmu_curve_by_L": {
+      "1": 4.487,
+      "2": 7.6509,
+      "3": 8.8148
+    },
+    "undersampled_at_Lmax": true,
+    "group": "D_language",
+    "note": "char-level English"
+  },
+  "language_word_shuffle": {
+    "alphabet_size": 97,
+    "n_sequences": 1,
+    "n_tokens": 459866,
+    "entropy_rate_hmu": 0.77454,
+    "excess_entropy_E": 8.26252,
+    "recoverability_at_width": [
+      4.4943,
+      3.5675,
+      2.82455,
+      2.24734,
+      1.84115,
+      1.48688,
+      1.12565,
+      0.77454
+    ],
+    "Cmu_cssr_peak": 7.8867,
+    "Cmu_peak_L": 3,
+    "n_states_peak": 738,
+    "Cmu_still_growing_at_range_end": true,
+    "Cmu_state_curve_by_L": {
+      "1": 70,
+      "2": 404,
+      "3": 738
+    },
+    "Cmu_curve_by_L": {
+      "1": 4.487,
+      "2": 7.4051,
+      "3": 7.8867
+    },
+    "undersampled_at_Lmax": true,
+    "group": "D_language",
+    "note": "D2 control"
+  },
+  "language_ngram5": {
+    "alphabet_size": 97,
+    "n_sequences": 1,
+    "n_tokens": 459866,
+    "entropy_rate_hmu": 0.89357,
+    "excess_entropy_E": 7.96824,
+    "recoverability_at_width": [
+      4.4938,
+      3.56703,
+      2.74879,
+      2.0837,
+      1.58147,
+      1.43931,
+      1.19411,
+      0.89357
+    ],
+    "Cmu_cssr_peak": 9.0357,
+    "Cmu_peak_L": 3,
+    "n_states_peak": 965,
+    "Cmu_still_growing_at_range_end": true,
+    "Cmu_state_curve_by_L": {
+      "1": 73,
+      "2": 447,
+      "3": 965
+    },
+    "Cmu_curve_by_L": {
+      "1": 4.4887,
+      "2": 7.7222,
+      "3": 9.0357
+    },
+    "undersampled_at_Lmax": true,
+    "group": "D_language",
+    "note": "D2 control"
+  }
+}

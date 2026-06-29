@@ -1,0 +1,12 @@
+  counter_anbn           A=4   hmu=0.175 E=1.438 Cmu_peak=2.131 (grow=False) [0s]
+  counter_anbncn         A=5   hmu=0.162 E=2.358 Cmu_peak=3.175 (grow=True) [1s]
+  pos_kth                A=33  hmu=-0.134 E=13.073 Cmu_peak=0.999 (grow=False) [1s]
+  pos_middle             A=9   hmu=-0.138 E=12.430 Cmu_peak=0.848 (grow=False) [1s]
+  pos_last2              A=9   hmu=-0.085 E=10.996 Cmu_peak=1.225 (grow=False) [3s]
+  physics_v1             A=12  hmu=0.551 E=7.562 Cmu_peak=5.794 (grow=True) [42s]
+  language               A=97  hmu=0.767 E=8.472 Cmu_peak=8.815 (grow=True) [222s]
+  language_word_shuffle  A=97  hmu=0.775 E=8.263 Cmu_peak=7.887 (grow=True) [179s]
+  language_ngram5        A=97  hmu=0.894 E=7.968 Cmu_peak=9.036 (grow=True) [267s]
+
+full table -> runs/complexity/complexity_table_full.json (714.6s)
+figure -> runs/complexity/recoverability_all.png
